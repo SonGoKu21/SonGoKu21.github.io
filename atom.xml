@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-11-03T09:18:25.955Z</updated>
+  <updated>2020-11-04T12:59:48.978Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>分蛋糕博弈（一）</title>
+    <link href="https://godweiyang.com/2020/11/04/game-theory/"/>
+    <id>https://godweiyang.com/2020/11/04/game-theory/</id>
+    <published>2020-11-04T09:01:49.000Z</published>
+    <updated>2020-11-04T12:59:48.978Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;分蛋糕博弈（一）&quot;&gt;&lt;a href=&quot;#分蛋糕博弈（一）&quot; class=&quot;headerlink&quot; title=&quot;分蛋糕博弈（一）&quot;&gt;&lt;/a&gt;分蛋糕博弈（一）&lt;/h1&gt;&lt;h2 id=&quot;问题概述&quot;&gt;&lt;a href=&quot;#问题概述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="game-theory" scheme="https://godweiyang.com/categories/game-theory/"/>
+    
+    
+      <category term="博弈论" scheme="https://godweiyang.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+      <category term="game-theory" scheme="https://godweiyang.com/tags/game-theory/"/>
+    
+      <category term="免嫉妒分割" scheme="https://godweiyang.com/tags/%E5%85%8D%E5%AB%89%E5%A6%92%E5%88%86%E5%89%B2/"/>
+    
+      <category term="envy-freeness" scheme="https://godweiyang.com/tags/envy-freeness/"/>
+    
+  </entry>
   
   <entry>
     <title>第一篇杂谈</title>
