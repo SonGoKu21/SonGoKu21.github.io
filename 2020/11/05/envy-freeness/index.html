@@ -330,7 +330,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -497,14 +497,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.5k
+                    6.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    16 分
+                    23 分
                 </div>
                 
                 
@@ -583,6 +583,50 @@
 <p>特别的，我们表明修改后的算法的最后一步会导致完整分配为$\frac{4}{7}-GMMS$ 。最近和独立地，Amanatidis等人。  [3]显示了相同的近似值。</p>
 <h3 id="1-2-我们的技术"><a href="#1-2-我们的技术" class="headerlink" title="1.2 我们的技术"></a>1.2 我们的技术</h3><p>现在，我们概述用于查找$EFX$分配的主要思想。我们首先回顾一下Lipton等人[25]的算法找到$EF1$分配。他们使用了嫉妒图的概念：每一个顶点都对应于一个代理人，并且边$(i,j)$代表$i$嫉妒$j$。保持不变的是，嫉妒图是DAG:一个回路对应于一个嫉妒回路，并且通过沿着一个回路交换束。每一位代理人变得更好并且嫉妒边的数量没有增加。更加准确地是，如果$i_o\rightarrow i_1\rightarrow i_2\rightarrow …\rightarrow i_{i-1}\rightarrow i_o$是嫉妒图中的一个回路。然后将$X_{i_{j+1}}$重新分配给代理人$i_j$,$0\leq j\leq \ell$(索引将以模数$\ell$ 读取)将会提高权重每个代理人的估值。同样，如果存在从一条边从$s$到$i_{k}$，$s$不属于回路的一部分。那么我们在沿着回路交换束之后，该边从$s$指向$i_{k+1}$.因此，途中嫉妒边的数量没有增加，并且在回路中代理人的价值也会上升，因此可以消除回路。</p>
 <p>​    [25]中的算法循环运行，并且始终保持分配是$EF1$。在每个回合开始时，标识一个不嫉妒的代理$s$（这是DAG的一个源顶点），并将没有分配的商品g分配给s。新分配也是$EF1$，因为没有人会嫉妒移除商品g后的s束。</p>
+<p><strong>重新分配操作</strong>  现在，我们重点介绍$EF1$分配和$EFX$分配之间的关键区别。 根据Lipton等人的算法。  [25]，很明显，给定一组商品$M_0$的EF1分配，只需将$M_1$的商品逐一添加到存在的束中并且巧妙的改变所有者（如果有必要的话），对于任何$M_0 \bigcup M_1$，就可以确定EF1分配。 直观地讲，我们无需剪切或合并任何$EF1$分配中形成的束。 我们可以将未分配的商品适当地附加到当前束中。</p>
+<p>对于$EFX$，上述策略与实际情况想去甚远，考虑以下所示的示例，其中三个代理商具有附加价值，四个产品$a,b,c,d$。</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">a</th>
+<th align="center">b</th>
+<th align="center">c</th>
+<th align="center">d</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Agent 1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">Agent 2</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">Agent 3</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+</tbody></table>
+<p>对于前三种商品的$EFX$分配必须给这三个代理人中的每一个都准确地给出a，b，c中的一个。 但是，所有四种商品的$EFX$分配必须将单例集{d}分配给某个代理（例如，agent 1），或者例如{a}分配给agent 2，{b，c}分配给agent 3。因此，需要对分配进行切割和合并。 如果有很多代理人（每个代理人都有自己的估值），则很难进行分拆合并操作。 在这里，我们实现了如下的全局重新分配操作。</p>
+<p>改善社会福利  假设我们有$EFX$分配$X = &lt;X_1,…,X_n&gt;$在某些子集$M_0\sub M$上。我们现在想要添加一个商品$g\in M\setminus M_0$。但是我们将无法在$M_o\cup \{g\}$上保证$EFX$ 分配。我们将确保情况(i)或情况（ii）发生</p>
+<p>(i) 我们有一个在子集$M_o\cup \{g\}$上的$EFX$分配$X’ = &lt;X’_1,…,X’_n&gt;$使得对于所有的$i$有$v_i(X’_i)\ge v_i(X_i)$并且至少存在一个代理人$j$有$v_j(X’_j &gt; v_j(X_j)$。因此$\begin{matrix}\sum_{i\in [n]} v_i(X’_i) &gt; \sum_{i\in [n]} v_i(X_i) \end{matrix}$；换句话说，严格的改善了社会福利。</p>
+<p>(ii)我们有一个在$M_o\cup \{g\}$上的$EFX$分配并且社会福利没有增加。</p>
+<p>因此，在我们算法的每个步骤中，要么增加社会福利，要么增加分配的商品数量而不降低社会福利，因此我们总是在进步。这类似于Plaut和Roughgarden [26]使用的方法，当代理商具有次加性估值时，它保证存在$\frac{1}{2}-EFX$。 现在，我们概述如何确保情况（i）和（ii）之一必须发生。</p>
+<p>为了简化说明，我们假定与我们的起始$EFX$分配$X$对应的嫉妒图只有一个来源$s$。 将$g$添加到$s$的束中：如果没有人嫉妒$s$的任何商品，那么我们的情况就很容易了，因为我们在$M_o\cup \{g\}$上有$EFX$分配。 在这种情况下，我们“使”嫉妒图“循环”（如果创建了循环）并继续。请注意，沿着嫉妒图的循环交换束可以增加社会福利。</p>
+<p><strong>最嫉妒的代理人</strong>  现在假设在将$g$分配给$s$之后，有一个或多个代理人嫉妒$s$的任何商品。 为了解决这个问题，我们引入了最嫉妒代理人的概念。 让$i$成为一个嫉妒$s$的所有东西的代理人，所以对于某些$S’\sub X_s\cup \{g\}$有$v_i(X_i)&lt;v_i(S’)$。令$S_i$为$X_s\cup \{g\}$的任何包含式最小子集，使得$v_i(X_i)&lt;v_i(S_i)$（打破任意关系）。所以对任何$T\sub S_i$，我们有$v_i(X_i)\ge v_i(T)$。<br> $\bullet$ 代理人$i$使得对于某些$S_i\sub X_s \cup \{g\}$有$v_i(X_i)&lt;v_i(S_i)$，没有任何代理人嫉妒$S_i$的严格子集，将会称为在 $X_s\cup \{g\}$上最嫉妒的代理人（break ties arbitrarily）</p>
+<p>让$t$成为$X_s\cup \{g\}$上的最嫉妒代理人。关键的观察结果是，没有任何代理人嫉妒$S_t$的任何商品。否则的话，他将与$S_t\sub X_s\cup \{g\}$成为一个包含书最小嫉妒子集相矛盾，即，任何代理人都不嫉妒$S_t$的合适子集。回想一下s是唯一来源的假设，所以在这嫉妒图中有一个路径$s\rightarrow i_1\rightarrow i_2\rightarrow …\rightarrow i_{k-1}\rightarrow t$。我们沿着这条路径向左移动束：所以$s$获得了$i_1$的束，并且对于$1\le r\le k-1$：$i_r$获得$i_{r+1}$的束（其中$i_k=t$)，最终$t$获得$S_t$。$X_s\cup \{g\}$中的商品被仍回到未分配的商品池中。</p>
+<p>可以观察到，与分配$X$相比，此路径上的每个代理人现在严格来说都比其他代理人更好。 此外，根据$S_t$的定义，没有任何代理人嫉妒任何其他代理人。 因此，我们有一个期望的$EFX$分配$X’$。 当有多个来源(Source)时，只要有足够的未分配商品，我们就可以采用这种技术。 特别是，未分配商品的数量必须至少等于嫉妒图中的来源数量。 我们将在第2节中对此进行详细描述。<br>   我们想将上述方法与其他$EFX$算法进行对比[26，12]。  Plaut和Roughgarden [26]的$1/2-EFX$算法或者将g（新商品）与现有的包合并，或者将单例集$\{g\}$分配给代理。  Caragiannis等人的$EFX-with-charity$算法。  [12]采用最大纳什社会福利分配作为输入，然后从实例中永久删除一些商品。 我们认为“最嫉妒的代理人”这一概念是一种自然的方式，可以打破束以保持嫉妒的自由，这是我们工作的创新贡献之一。</p>
+<p><strong>我们的其他结果</strong> 关于我们具有近似$MMS$保证的结果，如果$EFX$分配中未分配商品的数量很大，那么来源的数量也必须很大：这些是令人嫉妒的代理商。 而且，没有代理人嫉妒未分配的商品集。<br>   现在假设$|P|  = n-1$。 这意味着每个代理人都是来源。 因此，没有代理人羡慕任何其他代理人的束以及未分配商品的集合。 因此，对于每个代理$i$，我们有：<br>$$<br>\begin{split}<br>v_i(X_i)\ge \frac{v_i(M)}{n+1} \ge (1+1/n)^{-1}\cdot \frac{v_i(M)}{n}\<br>     \qquad  \ge  (1-1/n)^{-1}\cdot MMS_i(n,M)<br>\end{split}<br>$$<br>其中，$v_i(M)/n\ge MMS_i(n,M)$对附加价值具有约束。我们在第三节中展示了近似$MMS$分配的结果和近似$GMMS$分配的改进边界。</p>
 
             </div>
             <hr />
@@ -1054,7 +1098,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="分蛋糕博弈(二)">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="分蛋糕博弈(二)">
                         
                         <span class="card-title">分蛋糕博弈(二)</span>
                     </div>
@@ -1116,7 +1160,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="分蛋糕博弈（一）">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="分蛋糕博弈（一）">
                         
                         <span class="card-title">分蛋糕博弈（一）</span>
                     </div>
@@ -1333,7 +1377,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">6.1k</span>
+            <span class="white-color">7.8k</span>
             
 
             <br>
