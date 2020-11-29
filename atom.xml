@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-11-18T06:57:49.678Z</updated>
+  <updated>2020-11-29T14:14:29.662Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>weekly11/28</title>
+    <link href="https://godweiyang.com/2020/11/28/weekly11-28/"/>
+    <id>https://godweiyang.com/2020/11/28/weekly11-28/</id>
+    <published>2020-11-28T05:41:28.000Z</published>
+    <updated>2020-11-29T14:14:29.662Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一周工作总结-（2020-11-23-11-29）&quot;&gt;&lt;a href=&quot;#一周工作总结-（2020-11-23-11-29）&quot; class=&quot;headerlink&quot; title=&quot;一周工作总结 （2020/11/23~11/29）&quot;&gt;&lt;/a&gt;一周工作总结
+        
+      
+    
+    </summary>
+    
+      <category term="weekly" scheme="https://godweiyang.com/categories/weekly/"/>
+    
+    
+      <category term="差分隐私" scheme="https://godweiyang.com/tags/%E5%B7%AE%E5%88%86%E9%9A%90%E7%A7%81/"/>
+    
+  </entry>
   
   <entry>
     <title>分蛋糕博弈(二)</title>
@@ -38,11 +64,11 @@
       <category term="game-theory" scheme="https://godweiyang.com/categories/game-theory/"/>
     
     
-      <category term="envy-freeness" scheme="https://godweiyang.com/tags/envy-freeness/"/>
-    
       <category term="博弈论" scheme="https://godweiyang.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
       <category term="免嫉妒分割" scheme="https://godweiyang.com/tags/%E5%85%8D%E5%AB%89%E5%A6%92%E5%88%86%E5%89%B2/"/>
+    
+      <category term="envy-freeness" scheme="https://godweiyang.com/tags/envy-freeness/"/>
     
       <category term="论文翻译" scheme="https://godweiyang.com/tags/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/"/>
     
@@ -70,13 +96,13 @@
       <category term="game-theory" scheme="https://godweiyang.com/categories/game-theory/"/>
     
     
-      <category term="envy-freeness" scheme="https://godweiyang.com/tags/envy-freeness/"/>
-    
       <category term="博弈论" scheme="https://godweiyang.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+      <category term="game-theory" scheme="https://godweiyang.com/tags/game-theory/"/>
     
       <category term="免嫉妒分割" scheme="https://godweiyang.com/tags/%E5%85%8D%E5%AB%89%E5%A6%92%E5%88%86%E5%89%B2/"/>
     
-      <category term="game-theory" scheme="https://godweiyang.com/tags/game-theory/"/>
+      <category term="envy-freeness" scheme="https://godweiyang.com/tags/envy-freeness/"/>
     
   </entry>
   
