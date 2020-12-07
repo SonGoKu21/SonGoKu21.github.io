@@ -330,7 +330,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -485,14 +485,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.6k
+                    2.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    12 分
                 </div>
                 
                 
@@ -535,6 +535,26 @@ $$ <br>用户的路径效用：<br>$$<br>z_i = w_1r_{i1}+w_2r_{i2}<br>$$<br>使�
 <p>如果$U$属于$V$，且对任意$u，v∈U$有$(u,v)$不属于$E$，则称$U$是$G$的空子图。$G$的空子图$U$是$G$的独立集当且仅当$U$不包含在$G$的更大的空子图中。$G$的最大独立集是$G$中所含顶点数最多的独立集。</p>
 <p>对于任一无向图$G=(V,E)$，其补图$G’=(V’,E’)$定义为：$V’=V$，且$(u,v)∈E’$当且仅当$(u,v)∉E$。</p>
 <p>如果$U$是$G$的完全子图，则它也是$G’$的空子图，反之亦然。因此，$G$的团与$G’$的独立集之间存在一一对应的关系。特殊地，$U$是$G$的最大团当且仅当$U$是$G’$的最大独立集。</p>
+<p>这里有两个概念</p>
+<p>Maximum clique problem</p>
+<p>Maximal clique enumeration problem</p>
+<p>上面是最大团问题，下面是极大团枚举问题</p>
+<p><img src="5.png" alt="Q的图模型"></p>
+<p>我们可以得到$MCS(G)= \{Q1,Q2,Q3\}$</p>
+<p>$MCE(G)= \{Q1,Q2,Q3\}.\{Q3,Q4\},\{S\},\{Q5\}$</p>
+<p>引入流行集$Popularity \  set \ of \ a \ record:popSet(r)$,每一个包含$r$的查询响应所构成的子集，即$r$能够影响到的所有查询的子集。</p>
+<p><img src="3.png" alt="流行集"></p>
+<p>可以证明差分隐私的bound可以由流行集来定义：</p>
+<p><img src="6.png" alt="popset_Bound"></p>
+<p>本文的核心思想之一，把找到一个流行集的问题（即找到bound）转化成了找到所生成的图模型中最大团的问题。</p>
+<p>所以差分隐私的bound可以有以下的新的定义：</p>
+<p>（1）$BOUNDING \ S_{L_1} (Q) \ with \ MCS(G)$</p>
+<p><img src="7.png" alt="MCS(G)_Bound"></p>
+<p>不过显而易见的是，一个record r最多影响一个最大团的范围的query，这样的一个bound是远远高估的。所以我们考虑列举Q中所有的团，也就是运用第二个概念极大团枚举。</p>
+<p>（2）$BOUNDING \ S_{L_1 } (Q) \ with \ MCE(G)$</p>
+<p><img src="8.png" alt="MCE(G)_Bound"></p>
+<p>把问题简化成找到最大的两个集团，因为我们是$r\rightarrow r’$，最多是两条记录的改变。</p>
+<p>over</p>
 <h2 id="三-大社会的信任型个性化隐私保护方案"><a href="#三-大社会的信任型个性化隐私保护方案" class="headerlink" title="三  大社会的信任型个性化隐私保护方案"></a>三  大社会的信任型个性化隐私保护方案</h2><p>摘要—在大数据时代，社交网络应用程序的快速发展已成为至关重要的数据源，而大量个人数据的收集却引起了人们对隐私的重大关注。 差异性隐私已成为一种有效的工具，可以在获取有用信息的同时提供强大的隐私保证。 但是，当前大多数提议的解决方案都假定网络中的所有个人都需要统一级别的隐私保护，这排除了个人的个性化要求。 为了解决这个问题，在本文中，我们通过结合信任的概念，提出了一种信任粒度的个性化差异隐私机制，称为TGDP。 具体来说，每当一个用户想要获取另一个用户的个人信息时，建议的机制都会返回一个相应的私人响应，其中为每个人选择的隐私级别取决于他们在网络中的信任值。 与传统方法相比，该方案可以提供一种细粒度的差异隐私保护方法，同时保证了社交网络的实用性。 最后，对该方案进行了分析评估，并在实际数据上进行了实验证明，这反映了其有效性和实用性。</p>
 <p>个性化差分隐私</p>
 <p>定义 (Personalized Differential Privacy)一个随机算法$M$给任一一对相邻数据集$D_1$和$D_2$$\psi-differential  -privacy$，并且对于任一集的输出$\Omega$，$M$满足：<br>$$<br>P_r[M(D_1)\in \Omega]\le e^{\epsilon_{\varphi}(i)}\cdot P_r[M(D_2\in \Omega)]<br>$$<br>其中，$\epsilon_{\varphi}(i)$是用户的隐私需求。</p>
@@ -1028,7 +1048,7 @@ $$ <br>用户的路径效用：<br>$$<br>z_i = w_1r_{i1}+w_2r_{i2}<br>$$<br>使�
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="weekly11/28">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="weekly11/28">
                         
                         <span class="card-title">weekly11/28</span>
                     </div>
@@ -1079,7 +1099,7 @@ $$ <br>用户的路径效用：<br>$$<br>z_i = w_1r_{i1}+w_2r_{i2}<br>$$<br>使�
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="分蛋糕博弈(二)">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="分蛋糕博弈(二)">
                         
                         <span class="card-title">分蛋糕博弈(二)</span>
                     </div>
@@ -1109,16 +1129,16 @@ $$ <br>用户的路径效用：<br>$$<br>z_i = w_1r_{i1}+w_2r_{i2}<br>$$<br>使�
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/envy-freeness/" target="_blank">
+                        <span class="chip bg-color">envy-freeness</span>
+                    </a>
+                    
                     <a href="/tags/博弈论/" target="_blank">
                         <span class="chip bg-color">博弈论</span>
                     </a>
                     
                     <a href="/tags/免嫉妒分割/" target="_blank">
                         <span class="chip bg-color">免嫉妒分割</span>
-                    </a>
-                    
-                    <a href="/tags/envy-freeness/" target="_blank">
-                        <span class="chip bg-color">envy-freeness</span>
                     </a>
                     
                     <a href="/tags/论文翻译/" target="_blank">
@@ -1296,7 +1316,7 @@ $$ <br>用户的路径效用：<br>$$<br>z_i = w_1r_{i1}+w_2r_{i2}<br>$$<br>使�
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">10.4k</span>
+            <span class="white-color">10.7k</span>
             
 
             <br>
