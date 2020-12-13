@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-12-07T14:05:58.563Z</updated>
+  <updated>2020-12-13T13:58:29.053Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Weekly_12/13</title>
+    <link href="https://godweiyang.com/2020/12/13/weekly-12-13/"/>
+    <id>https://godweiyang.com/2020/12/13/weekly-12-13/</id>
+    <published>2020-12-13T13:55:13.000Z</published>
+    <updated>2020-12-13T13:58:29.053Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;联邦学习入门（Federated-Learning）&quot;&gt;&lt;a href=&quot;#联邦学习入门（Federated-Learning）&quot; class=&quot;headerlink&quot; title=&quot;联邦学习入门（Federated
+        
+      
+    
+    </summary>
+    
+      <category term="weekly" scheme="https://godweiyang.com/categories/weekly/"/>
+    
+      <category term="联邦学习" scheme="https://godweiyang.com/categories/weekly/%E8%81%94%E9%82%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Federated Learning" scheme="https://godweiyang.com/tags/Federated-Learning/"/>
+    
+  </entry>
   
   <entry>
     <title>weekly11/28</title>

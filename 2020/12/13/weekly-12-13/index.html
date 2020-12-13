@@ -4,12 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="分蛋糕博弈（一）, ZJH">
+    <meta name="keywords" content="Weekly_12/13, ZJH">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="分蛋糕博弈（一）问题概述有一家外企招聘员工时出了一道面试题：要求应聘者把一盒蛋糕切成了八份，分给八个人，但是蛋糕盒里还必须留一份。
-解析：最简单直接的方法，肯定是均分，可是我们能够确保其他人认可你的均分的结果嘛？ 最可能实现一半对一半的公平">
+    <meta name="description" content="联邦学习入门（Federated Learning）联邦学习算是我接触到的一个比较新的方向，由于各种莫名其妙的原因，在大学的时候一直抵触接触Machine Learning、Deep Learning。所以在上一周（摸鱼中）看了很多吴恩达老">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分蛋糕博弈（一） | 周锦浩的博客</title>
+    <title>Weekly_12/13 | 周锦浩的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -330,13 +329,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        分蛋糕博弈（一）
+                        Weekly_12/13
                     </div>
                 </div>
             </div>
@@ -447,20 +446,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/envy-freeness/" target="_blank">
-                            <span class="chip bg-color">envy-freeness</span>
-                        </a>
-                        
-                        <a href="/tags/博弈论/" target="_blank">
-                            <span class="chip bg-color">博弈论</span>
-                        </a>
-                        
-                        <a href="/tags/免嫉妒分割/" target="_blank">
-                            <span class="chip bg-color">免嫉妒分割</span>
-                        </a>
-                        
-                        <a href="/tags/game-theory/" target="_blank">
-                            <span class="chip bg-color">game-theory</span>
+                        <a href="/tags/Federated-Learning/" target="_blank">
+                            <span class="chip bg-color">Federated Learning</span>
                         </a>
                         
                     </div>
@@ -471,8 +458,12 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/game-theory/" class="post-category" target="_blank">
-                            game-theory
+                        <a href="/categories/weekly/" class="post-category" target="_blank">
+                            weekly
+                        </a>
+                        
+                        <a href="/categories/weekly/联邦学习/" class="post-category" target="_blank">
+                            联邦学习
                         </a>
                         
                     </div>
@@ -483,7 +474,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-04
+                    2020-12-13
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -497,14 +488,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
                 
@@ -520,25 +511,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="分蛋糕博弈（一）"><a href="#分蛋糕博弈（一）" class="headerlink" title="分蛋糕博弈（一）"></a>分蛋糕博弈（一）</h1><h2 id="问题概述"><a href="#问题概述" class="headerlink" title="问题概述"></a>问题概述</h2><p>有一家外企招聘员工时出了一道面试题：要求应聘者把一盒蛋糕切成了八份，分给八个人，但是蛋糕盒里还必须留一份。</p>
-<p>解析：最简单直接的方法，肯定是均分，可是我们能够确保其他人认可你的均分的结果嘛？ 最可能实现一半对一半的公平分配的方案，是A切蛋糕，让B先选。 </p>
-<p>这种方案很难保证公平，因为双方都不会愿意成为切蛋糕的一方。虽然双方都希望对方切、自己挑，但是僵持的时间不会一直维持，因为这样所带来的时间开销，会导致得不偿失，出现收益缩水的现象。</p>
-<p>在公平分割（fair division）问题中，有一个根本的公平原则叫做“均衡分割”（Proportional division）。如果n个人分蛋糕，则每个人都认为自己得到了整个蛋糕至少1/n的价值。 </p>
-<h2 id="“你来分我来选”"><a href="#“你来分我来选”" class="headerlink" title="“你来分我来选”"></a>“你来分我来选”</h2><p>A，B先分，A来切，B来选</p>
-<p>然后，A和B把手中的蛋糕分成三份，C从每个人手中取走一份，那么A、B、C都有两份。</p>
-<p>A、B、C再将自己手中的蛋糕分成四份，让第四个人D从三人手中各挑选一份。</p>
-<p>重复上述的过程，直到最后一个人选完自己的蛋糕。</p>
-<p>前提：只要每个人在切蛋糕时能够做到均分，无论哪块被挑走，他都不会吃亏；保证每个人手中的蛋糕在自己看来都是不小于蛋糕总价值1/n的（PS. 这样做蛋糕会被分的乱七八糟，不过，whatever…）</p>
-<h2 id="“最后削减人算法”"><a href="#“最后削减人算法”" class="headerlink" title="“最后削减人算法”"></a>“最后削减人算法”</h2><p>总人数n。</p>
-<p>首先A从蛋糕中切出他认为的1/n，然后传递给B，B可以选择直接把这块蛋糕递交给C，也可以选择从中切除一小块（即修剪），然后移交给下一个人。</p>
-<p>规定：最后一个对蛋糕进行“修剪”的人将获得这块蛋糕，其余的n-1人从头开始重复这个流程。</p>
-<p>结果：每进行一个loop，都会有一个人拿到了令他满意的utility，直到所有人得到蛋糕。并且保证了每个人手中的蛋糕是整个蛋糕价值的1/n。</p>
-<p>不过，以上两种方法并非完全公平，对于分蛋糕的人来说，两块蛋糕的价值均等，但是对于选蛋糕的人来说，两块蛋糕的价值是有差异的，因此，选蛋糕的人往往能够获得大于1/2的价值。</p>
-<p><strong>不同人对蛋糕的价值的评判标准不同</strong></p>
-<h3 id="“免嫉妒分割（envy-free-division）”"><a href="#“免嫉妒分割（envy-free-division）”" class="headerlink" title="“免嫉妒分割（envy-free division）”"></a>“免嫉妒分割（envy-free division）”</h3><p>每个人都认为别人的蛋糕没有我手里的好</p>
-<p>1960年，John Selfridge和John Convey各自独立地分析了人数为3的情况，构造除了第一个满足免嫉妒条件的三人分割方案。这种分割方案被称为“Selfridge-Convey算法”。</p>
-<p>首先，A 把蛋糕分成三等份（当然是按照自己的看法来分的，后面提到的切分、选取也都是这样）。如果 B 认为这三块蛋糕中较大的两块是一样大的，那么按照 C 、 B 、 A 的顺序依次选取蛋糕，问题就解决了。麻烦就麻烦在 B 认为较大的两块蛋糕不一样大的情况。此时，B 就把最大的那块蛋糕的其中一小部分切下来，让剩余的部分和第二大的蛋糕一样大。被切除的部分暂时扔在一旁，在第二轮分割时再来处理。接下来，按照 C 、 B 、 A 的顺序依次选蛋糕，但有一个限制：如果 C 没有选那块被修剪过的蛋糕，B 就必须选它。<br>  这样，三人就各分得了一块蛋糕。由于 A 是切蛋糕的人，对于他来说拿到哪一块都一样，因此 A 不会嫉妒别人。由于 B 选取的是两个较大块中的一个，因此 B 也不会嫉妒别人。由于 C 是第一个选蛋糕的，显然他也不会嫉妒别人。因此，就目前来说，三个人之间是不会有嫉妒发生的。<br>  但是，还有一小块被切除的部分没分完，因此分割流程进入第二轮。<br>  在 B 和 C 之间，一定有一个人选择了那块被修剪过的蛋糕。不妨把这个人重新记作 X ，另一个人就记作 Y 。让 Y 把最后那一小块分成三等份，按照 X 、 A 、 Y 的顺序依次挑选蛋糕，结束第二轮流程。这一轮结束后，每个人都又得到了一小块蛋糕。由于 X 是第一个选蛋糕的人， X 显然不会嫉妒别人；由于 Y 是分蛋糕的人， Y 也不会嫉妒别人。由于 A 比 Y 先选， A 不会嫉妒 Y 。最后，A 也是不会嫉妒 X 的，因为即使 X 拥有了第二轮中的全部蛋糕，X 手里的蛋糕加起来也只是第一轮开始时 A 等分出来的其中一块蛋糕，这是不可能超过 A 的。这就说明了，三个人之间仍然不会有嫉妒发生，Selfridge-Conway 算法的确满足免嫉妒条件。</p>
-<p>  不过，Selfridge-Conway 算法只能在三人分蛋糕时使用，并不能扩展到人数更多的情况。对于人数更多的情况，免嫉妒分割问题更加困难，目前数学家们还没有找到一个比较可行的方案。正如数学家 Sol Garfunkel 所说，分蛋糕问题是 20 世纪数学研究中最重要的问题之一。直到现在，也还有一大群数学家正投身于分蛋糕问题之中，研究包括免嫉妒性在内的各种公平条件，致力于构造新的公平分割方案。</p>
+                <h1 id="联邦学习入门（Federated-Learning）"><a href="#联邦学习入门（Federated-Learning）" class="headerlink" title="联邦学习入门（Federated Learning）"></a>联邦学习入门（Federated Learning）</h1><p>联邦学习算是我接触到的一个比较新的方向，由于各种莫名其妙的原因，在大学的时候一直抵触接触Machine Learning、Deep Learning。所以在上一周（摸鱼中）看了很多吴恩达老师的视频进行学习，不过总时长也太长了，很怀疑自己有没有耐心看下去。这一周先从Federated Learning的白皮书看起。</p>
+<h2 id="Communication-Efficient-Learning-of-Deep-Networks-from-Decentralized-Data"><a href="#Communication-Efficient-Learning-of-Deep-Networks-from-Decentralized-Data" class="headerlink" title="Communication-Efficient Learning of Deep Networks from Decentralized Data"></a>Communication-Efficient Learning of Deep Networks from Decentralized Data</h2><p>这篇文章是2016年由谷歌实验室提出的，联邦学习算是分布式学习的一种，</p>
+<p>首先看看他的摘要</p>
+<p><strong>Abstract</strong></p>
+<p>现代移动设备可以访问适合于学习模型的大量数据，从而可以极大地改善设备上的用户体验。 例如，语言模型可以改善语音识别和文本输入，图像模型可以自动选择优质照片。<br>   但是，这种丰富的数据通常对隐私敏感，数量大或两者兼而有之，这可能会阻止登录到数据中心并使用常规方法进行培训。 我们提倡一种替代方法，将训练数据保留在移动设备上，并通过汇总本地计算的更新来学习共享模型。 我们将这种分散式方法称为联邦学习。<br>   我们提出了一种基于迭代模型平均的深度网络联合学习的实用方法，并考虑了五个不同的模型架构和四个数据集，进行了广泛的经验评估。 这些实验表明，该方法对于不平衡和非IID（独立同分布）数据分布是稳健的，该分布是此设置的定义特征。 通信成本是主要的约束条件，与同步随机梯度下降相比，我们显示要求的通信回合减少了10–100。</p>
+<p>通过文章中的总结，联邦优化有以下几个关键的属性：</p>
+<p>$\bullet$  Non-IID( Non-independent and identically distributed )：分散各个设备端的数据集因为用户的特异性而存在较大的差异；</p>
+<p>$\bullet$  Unbalanced：因为用户对于服务端的访问频率差异，使得各个设备端训练数据量存在不同；</p>
+<p>$\bullet$  Massively distributed：设备端数量远远大于设备端训练模型的数量；</p>
+<p>$\bullet$  Limited communication：因为网络等原因，使得设备端访问连接受到限制</p>
+<p>只选择一部分的client来提高效率，实验表明，挑选超过特定值的client数量会降低效率。然后，每个选定的client基于全局状态和本地的数据库执行本地的计算，并且发送更新给服务器。</p>
+<p>当我们关注非凸神经网络目标是，我们考虑的算法适用于以下形式的任何有限和的目标。</p>
+<p>$\min_{w\in \mathbb{R}^d} f(w)$ 其中$f(w)\overset{def}{=} \frac{1}{n}\sum^{n}_{i=1}f_i(w) $。</p>
+<p>对于一个机器学习的问题，我们通常会设置$f_i(w)= \ell(x_i,y_i,w) $，即样本数据$(x_i.y_i)$以及参数$w$。假设有$K$个用户数据分区，那么用$P_k$表示$k$用户的数据点索引的集合，令$n_k=|P_{k}|$，因此，上述的模型可以表示为</p>
+<p>$f(w)=\sum_{k=1}^{K} \frac{n_k}{n}F_k(w) x$其中，$F_k(w)=\frac{1}{n_k}\sum_{i\in P_{k}}f_i(w)$  </p>
+<p>因为$F_k(w)$是IID（独立同分布）。那么显然：<br>$$<br>E_{P_k}[F_k(w)]=f(w)<br>$$<br>独立同分布假设通常通过由分布式优化算法得出；</p>
+<h2 id="联邦平均算法"><a href="#联邦平均算法" class="headerlink" title="联邦平均算法"></a>联邦平均算法</h2><p>近年来，深度学习的大量成功应用几乎完全依赖于随机梯度下降（SGD）的变体来进行优化； 实际上，许多进步可以理解为通过简单的基于梯度的方法使模型的结构（以及损失函数）更易于优化[16]。所以，自然而然的，我们从建立从SGD开始的联邦优化算法。</p>
+<p>SGD可以简单的应用于联邦优化问题，在此问题中，每轮通信都执行一次批次梯度计算（例如在随机选择的client上）。这种方法的计算效率很高，但需要进行大量轮训才能生成好的模型（例如，即使使用批量归一化等高级方法，Ioffe和Szegedy [21]训练的MNIST在大小为60的小型批次上也可以进行50000步）。 我们在CIFAR-10实验中考虑了这个基线。</p>
+<p>在联邦环境中，挂钟时间花费很少的钱来吸引更多的客户，因此对于我们的基线，我们使用大批量同步SGD；  Chen等人的实验。[8]展示了这种方法在数据中心环境中是最新技术，其性能优于异步方法。 为了在联邦环境中应用此方法，我们在每个回合中选择一个client分区，然后计算这些client所拥有的所有数据的损失梯度。 因此，C控制全局批处理大小，其中C = 1对应于全批（非随机）梯度下降。2我们将此基准算法称为FederatedSGD（或FedSGD）。</p>
+<p>一个典型的具有$C=1$并且固定的学习率$\eta$的$FedSGD$实现是每个client计算$g_k =\nabla F_k(w_t)$，本地数据在当前模型$w_t$的平均梯度，中央服务器聚合这些梯度并应用更新$w_{t+1}\leftarrow w_t \leftarrow \eta \sum_{k=1}^K \frac{n_k}{n}g_k$,因为$\sum_{k=1}^K \frac{n_k}{n}g_k=\nabla f(w_t)$。等效更新为$\forall k,w_{i+1}^k \leftarrow w_t \leftarrow \eta g_k ,$然后$w_{t+1}\leftarrow \sum_{k=1}^K \frac{n_k}{n}w_{t+1}^k.$也就是说，每个client使用其本地数据在本地对当前模型进行梯度下降的一步，然后服务器对所得模型进行加权平均。一旦以这种方式编写了算法，我们就可以通过在平均步骤之前多次迭代本地更新$w^k\leftarrow w^k \leftarrow \eta\nabla F_k(w^k)$来为每个client添加更多计算。我们称这种方法为FederatedAveraging（或FedAvg）。计算量受到三个关键参数的控制，$C$,每轮执行计算的client的比例。$E$,每个client在每个回合中对其本地数据集进行的训练的次数。$B$，用于client更新的本地最小batch大小。我们写$B=\infin$表示整个本地数据集被视为单个小batch。因此，因此，在该算法族的一个端点，我们可以取$B = \infin$和$E = 1$，这恰好对应于$FedSGD$.对于有$n_k$个本地样本的client，每轮本地更新的数量由$u_k=E\frac{n_k}{B}$给出。在算法1中给出了完整的伪代码</p>
+<p>对于一般的非凸目标，参数空间中的平均模型可能会产生任意不良的模型。</p>
+<p><img src="1.png" alt="Loss function"></p>
+<p><img src="2.png" alt="Algorithm"></p>
 
             </div>
             <hr />
@@ -697,9 +692,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《分蛋糕博弈（一）》
+                    《Weekly_12/13》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/11/04/game-theory/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/12/13/weekly-12-13/" property="cc:attributionName"
                rel="cc:attributionURL">
                 周锦浩
             </a> 采用
@@ -1001,58 +996,52 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/11/05/envy-freeness/">
+                <a href="/2020/12/13/weekly-12-13/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="分蛋糕博弈(二)">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Weekly_12/13">
                         
-                        <span class="card-title">分蛋糕博弈(二)</span>
+                        <span class="card-title">Weekly_12/13</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            无嫉妒分配
+                            联邦学习入门（Federated Learning）联邦学习算是我接触到的一个比较新的方向，由于各种莫名其妙的原因，在大学的时候一直抵触接触Machine Learning、Deep Learning。所以在上一周（摸鱼中）看了很多吴恩达老
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-11-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-12-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/game-theory/" class="post-category" target="_blank">
-                                    game-theory
+                            <a href="/categories/weekly/" class="post-category" target="_blank">
+                                    weekly
+                                </a>
+                            
+                            <a href="/categories/weekly/联邦学习/" class="post-category" target="_blank">
+                                    联邦学习
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/envy-freeness/" target="_blank">
-                        <span class="chip bg-color">envy-freeness</span>
-                    </a>
-                    
-                    <a href="/tags/博弈论/" target="_blank">
-                        <span class="chip bg-color">博弈论</span>
-                    </a>
-                    
-                    <a href="/tags/免嫉妒分割/" target="_blank">
-                        <span class="chip bg-color">免嫉妒分割</span>
-                    </a>
-                    
-                    <a href="/tags/论文翻译/" target="_blank">
-                        <span class="chip bg-color">论文翻译</span>
+                    <a href="/tags/Federated-Learning/" target="_blank">
+                        <span class="chip bg-color">Federated Learning</span>
                     </a>
                     
                 </div>
@@ -1066,31 +1055,32 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/03/first-article/">
+                <a href="/2020/11/28/weekly11-28/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="第一篇杂谈">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="weekly11/28">
                         
-                        <span class="card-title">第一篇杂谈</span>
+                        <span class="card-title">weekly11/28</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            试一试第一篇blog
+                            一周工作总结 （2020/11/23~11/29）这周主要看了几篇DP和Game theory的文章
+（1）Personalized Location Privacy Protection for Location-Based Servic
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-11-03
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-11-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/感想/" class="post-category" target="_blank">
-                                    感想
+                            <a href="/categories/weekly/" class="post-category" target="_blank">
+                                    weekly
                                 </a>
                             
                             
@@ -1100,8 +1090,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/算法/" target="_blank">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/差分隐私/" target="_blank">
+                        <span class="chip bg-color">差分隐私</span>
                     </a>
                     
                 </div>
