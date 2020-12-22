@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-12-13T13:58:29.053Z</updated>
+  <updated>2020-12-22T09:01:32.750Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>blockchain attack method</title>
+    <link href="https://godweiyang.com/2020/12/22/blockchain-attack-method/"/>
+    <id>https://godweiyang.com/2020/12/22/blockchain-attack-method/</id>
+    <published>2020-12-22T08:51:20.000Z</published>
+    <updated>2020-12-22T09:01:32.750Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;区块链常见的攻击手段&quot;&gt;&lt;a href=&quot;#区块链常见的攻击手段&quot; class=&quot;headerlink&quot; title=&quot;区块链常见的攻击手段&quot;&gt;&lt;/a&gt;区块链常见的攻击手段&lt;/h1&gt;&lt;h2 id=&quot;Front-Running-Attacks&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="weekly" scheme="https://godweiyang.com/categories/weekly/"/>
+    
+      <category term="区块链" scheme="https://godweiyang.com/categories/weekly/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    
+    
+      <category term="Blockchain" scheme="https://godweiyang.com/tags/Blockchain/"/>
+    
+  </entry>
   
   <entry>
     <title>Weekly_12/13</title>
