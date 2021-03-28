@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godweiyang.com/"/>
-  <updated>2020-12-22T09:01:32.750Z</updated>
+  <updated>2021-03-28T07:13:51.984Z</updated>
   <id>https://godweiyang.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Biscotti</title>
+    <link href="https://godweiyang.com/2021/03/25/biscotti/"/>
+    <id>https://godweiyang.com/2021/03/25/biscotti/</id>
+    <published>2021-03-25T13:37:01.000Z</published>
+    <updated>2021-03-28T07:13:51.984Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Biscotti-A-Blockchain-System-for-Private-and-Secure-Federated-Learning&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="weekly" scheme="https://godweiyang.com/categories/weekly/"/>
+    
+    
+      <category term="Blockchain" scheme="https://godweiyang.com/tags/Blockchain/"/>
+    
+      <category term="Federate learning" scheme="https://godweiyang.com/tags/Federate-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>blockchain attack method</title>

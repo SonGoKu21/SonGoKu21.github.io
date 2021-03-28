@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Biscotti</title>
+      <link href="/2021/03/25/biscotti/"/>
+      <url>/2021/03/25/biscotti/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Biscotti-A-Blockchain-System-for-Private-and-Secure-Federated-Learning"><a href="#Biscotti-A-Blockchain-System-for-Private-and-Secure-Federated-Learning" class="headerlink" title="Biscotti: A Blockchain System for Private and Secure Federated Learning"></a>Biscotti: A Blockchain System for Private and Secure Federated Learning</h1><p>失踪人口回归，这个学期懒惰了一点，最近主要在搞自己的那个东西，然后比较感兴趣Federated Learning，所以这边的话，分享一篇联邦学习和区块链相结合的文章。</p><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>在联邦学习中，有很多场景下，人们并不信任第三方机构。为了避免直接共享敏感数据，大规模安全多方ML是一个突出的解决方案：客户端通过可信聚合器训练共享模型，而不暴露其底层数据或计算。但是，这样做的话就引来了新的威胁。 </p><p>本文提出的模型旨在解决安全多方ML中的Poisoning attacks投毒攻击和Information leakage attacks信息泄露攻击。</p><p>Poisoning attacks：攻击者对共享模型进行恶意的更新。</p><p>Information leakage attack：攻击者伪装成诚实的数据提供者，通过观察共享模型的更新来推断目标client的敏感训练数据的属性。</p><p>本文提出了Biscotti:一个分布式的公共P2P系统与区块链账本共同设计的隐私保护多方ML模型。</p><h2 id="Biscotti-Design"><a href="#Biscotti-Design" class="headerlink" title="Biscotti Design"></a>Biscotti Design</h2><p>Biscotti有以下的设计目标：</p><p>（1）收敛到最优全局模型</p><p>（2）通过验证节点的模型更新来防止投毒攻击</p><p>（3）预防信息泄露攻击来保护节点训练数据的隐私</p><p>（4）防止在没有足够的权益（stack）下的同谋攻击</p><p><img src="1.png" alt="design overview"></p><p>节点加入Biscotti一起合作训练一个全局模型。分布式账本里的每一个区块代表单独的一次SGD迭代，账本包括每一轮迭代的全局状态。</p><p>在每一次迭代中，节点本地计算SGD更新（步骤1）。因此SGD updates必须保证隐私，每一个节点首先使用差分隐私噪声隐蔽他们的更新。噪声是从每个client特有的一组噪声收集，并由VRF选择（步骤2和3）。</p><p>隐蔽过的更新由认证委员会认证来防御投毒攻击。Verification committee中的每一个成员签署节点为隐蔽的更新，如果节点通过了Multi-Krum（步骤4）。如果大部分的委员会成员签署了一个update（步骤5），签署过的update通过Shamir秘密共享分享（步骤6）并且交给聚合委员会。聚合委员会使用安全协议来聚合为掩蔽的更新（步骤7）。所有的被选为认证和聚合委员会的节点将会得到系统额外的权益奖励。聚合后的更新在一个新的区块中添加到全局模型中，这个区块将被传播给所有的节点，并且追加到账本之中（步骤8）。使用更新过的全局模型和权益，节点重复步骤1.</p><h3 id="Initializing-the-Training"><a href="#Initializing-the-Training" class="headerlink" title="Initializing the Training"></a>Initializing the Training</h3><p>每一个节点从创世区块获得如下的信息：</p><p>（1）初始模型状态$\omega_0$和期望的迭代数量$T$.</p><p>（2）为SGD updates创建委员会的公钥$PK$</p><p>（3）系统中所有节点的公钥$PK_i$，用来在认证过程中创建和验证签名</p><p>（4）每一个节点的预先承诺的T SGD 迭代的差分隐私噪声。</p><p>（5）节点初始的权益分布</p><p>（6）区块增加时权益的更新函数</p><h3 id="Blockchain-Design"><a href="#Blockchain-Design" class="headerlink" title="Blockchain Design"></a>Blockchain Design</h3><p><img src="2.png" alt="blockchain design"></p><p>多项式承诺</p><p>$COMM(\sum\Delta \omega_i) = \prod_{i} COMM(\Delta \omega_i)$</p><p>这里要提一提 可验证随机函数（Verification Random Function）</p><p><img src="3.png" alt="VRF"></p><p><img src="4.png" alt="VRF"></p><p>感觉类似一个hash+非对称的密钥体系</p><h3 id="Using-Stake-for-Role-Selection"><a href="#Using-Stake-for-Role-Selection" class="headerlink" title="Using Stake for Role Selection"></a>Using Stake for Role Selection</h3><p>使用权益来选择角色</p><p>在Biscotti的每一轮迭代中，使用一致哈希权重来决定角色（噪声者、验证者、聚合者）。</p><p><img src="6.png" alt="draw"></p><p>可以把一致哈希看做一个环，环上是所有的哈希取值，按照节点的权益，将环上的区域瓜分。将上一个区块的SHA-256哈希值重复的进行哈希，每一次哈希的结果将映射到哈希环之上，落在某一节点上，则代表将这次的身份指定给对应的节点。</p><p>可以看出，每一个节点都可能有多个身份，称之为子身份。</p><h3 id="Noise-protocol"><a href="#Noise-protocol" class="headerlink" title="Noise protocol"></a>Noise protocol</h3><p>添加的噪声机制满足$(\epsilon,\delta) - differential privacy$</p><p><img src="5.png" alt="noise protocal"></p><p>在这里，文章提出了用Pre-Committed Noise来抵御投毒攻击和信息泄露攻击，Biscotti要求每一个节点在创世区块提前提交未来每一轮次$t\in [1…T]$的噪声向量$\zeta_t$。每一轮迭代使用了一个隐私的VRF来选择一组基于目标$C$的私钥的一组有噪声的节点。</p><p>Protocol Description</p><p>对于可能预期运行特定次数的迭代$T$的工作，每个节点$i$生成$T$噪声向量$\zeta_t$并将这些噪声向量提交到账本中，存储大小为$N\times T$。当一个节点准备在一轮迭代中贡献一个update的时候，它运行噪声VRF并且联系每一个噪声节点k，要求事先在创世区块$COMM(\zeta_k)$中预提交的噪声向量$\zeta_k$。节点随后使用一个验证VRF来决定验证者集。节点使用噪声掩蔽更新，并且提交掩蔽过的update，噪声的承诺，未掩蔽的update的承诺给验证者。它还提交了噪声VRF证明，以向验证者验证其噪声是源于其噪声VRF集的一部分。</p><h3 id="Verification-Protocol"><a href="#Verification-Protocol" class="headerlink" title="Verification Protocol"></a>Verification Protocol</h3><p>每个验证者从每一个节点$i$得到下列信息：</p><p>（1）掩蔽的SGD update：$(\Delta\omega_i+\sum_k\zeta_k)$</p><p>（2）SGD update的承诺：$COMM(\Delta\omega)$</p><p>（3）k的噪声承诺集:$\{COMM(\zeta_1),COMM(\zeta_2),…,COMM(\zeta_i)\}$</p><p>（4）VRF证明k个噪声的身份</p><p>当一个验证者收到掩蔽的update是，它可以通过承诺的同态属性确认掩蔽的SGD update和原update、噪声是否一致。</p><p>$COMM(\Delta\omega_i+\sum_k \zeta_k)=COMM(\Delta\omega_i)\times \prod_k COMM(\Delta\zeta_k)$</p><p>再通过选择效果更好的update，来剔除劣质的更新</p><h3 id="Aggregation-Protocal"><a href="#Aggregation-Protocal" class="headerlink" title="Aggregation Protocal"></a>Aggregation Protocal</h3><p>前面有提到，，得到承诺的更新通过秘密共享分配给了聚合者，从而汇聚各个更新。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> weekly </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blockchain </tag>
+            
+            <tag> Federate learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>blockchain attack method</title>
       <link href="/2020/12/22/blockchain-attack-method/"/>
       <url>/2020/12/22/blockchain-attack-method/</url>
