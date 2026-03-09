@@ -53,7 +53,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
     #  name = 'Internships'
     #  url = '#internships'
     #  weight = 7
-      
+  '''    
   [languages.zh]
     languageName = '中文'
     weight = 2
@@ -92,7 +92,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
    #   name = '实习经历'
    #   url = '#internships'
    #   weight = 7
-
+'''
 [params]
   profilePicture = "images/profile.png"
   enableDarkMode = true
