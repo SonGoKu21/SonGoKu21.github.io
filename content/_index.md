@@ -31,17 +31,17 @@ My research interests include:
 ### Journal Articles
 
 - **Efficient Vector-Multiplicative Privacy-Preserving Retrieval-Augmented Generation for Large Language Models**  
-  **Jinhao Zhou**, Jun Wu  
+  **Jinhao Zhou**, Jun Wu*  
   *IEEE Transactions on Dependable and Secure Computing (TDSC)*, 2026. (CCF-A)  
   [Paper](https://ieeexplore.ieee.org/document/11419667) 
 
 - **DM-DPL: Toward Discrete Matrixing Differentially Private Learning**  
-  **Jinhao Zhou**, Zhou Su, Yuntao Wang, Jun Wu  
+  **Jinhao Zhou**, Zhou Su, Yuntao Wang, Jun Wu*  
   *IEEE Transactions on Information Forensics and Security (TIFS)*, 2025. (CCF-A)  
   [Paper](https://ieeexplore.ieee.org/document/11037426)
 
 - **Protecting Your Attention during Distributed Graph Learning: Efficient Privacy-Preserving Federated Graph Attention Network**  
-  **Jinhao Zhou**, Jun Wu, Jianbing Ni, Yuntao Wang, Yanghe Pan, Zhou Su  
+  **Jinhao Zhou**, Jun Wu*, Jianbing Ni, Yuntao Wang, Yanghe Pan, Zhou Su  
   *IEEE Transactions on Information Forensics and Security (TIFS)*, 2025. (CCF-A)  
   [Paper](https://ieeexplore.ieee.org/document/10858070)
 
@@ -50,25 +50,21 @@ My research interests include:
 ### Conference Papers
 
 - **Real-Time Reliable Large Language Models with Distributed Knowledge Crowdsourcing for Automotive Mobile Intelligence**  
-  **Jinhao Zhou**, Jun Wu  
+  **Jinhao Zhou**, Jun Wu*  
   *IEEE International Conference on Wireless Artificial Intelligent Computing Systems and Applications (WASA)*, 2025  
   [Paper](https://link.springer.com/chapter/10.1007/978-981-96-8725-1_33)
 
 - **Toward Privacy-Aware Efficient Federated Graph Attention Network in Smart Cloud**  
-  **Jinhao Zhou**, Zhou Su, Yuntao Wang, Qianqian Pan, Lizheng Liu, Jun Wu  
+  **Jinhao Zhou**, Zhou Su, Yuntao Wang, Qianqian Pan, Lizheng Liu, Jun Wu*  
   *IEEE SmartCloud*, 2024  
   🏆 **Best Paper Award**  
   [Paper](https://ieeexplore.ieee.org/document/10566319)
 
 - **Personalized Privacy-Preserving Federated Learning: Optimized Trade-off Between Utility and Privacy**  
-  **Jinhao Zhou**, Zhou Su, Jianbing Ni, Yuntao Wang, Yanghe Pan, Rui Xing  
+  **Jinhao Zhou**, Zhou Su*, Jianbing Ni, Yuntao Wang, Yanghe Pan, Rui Xing  
   *IEEE Global Communications Conference (GLOBECOM)*, 2022  
   [Paper](https://ieeexplore.ieee.org/document/10000793)
 
-- ***[Visual Instruction Tuning](https://arxiv.org/abs/2304.08485)*** <br>
-  Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee
-  in Conference on Neural Information Processing Systems (**Neurips**), 2023. <br>
-  <a href="https://arxiv.org/abs/2304.08485" class="no-trailing-icon"><img src="https://img.shields.io/badge/arXiv-2304.08485-b31b1b.svg?style=flat-square" alt="Arxiv-2304.08485"/></a><a href="https://github.com/haotian-liu/LLaVA" class="no-trailing-icon"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/haotian-liu/LLaVA?style=flat-square&logo=github&label=GitHub%20Stars&labelColor=black"></a>
 
 # 🎖 Honors and Awards {#honors-and-awards}
 

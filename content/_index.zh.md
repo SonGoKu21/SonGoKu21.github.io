@@ -45,7 +45,7 @@ title: "周锦浩个人主页"
   [论文链接](https://ieeexplore.ieee.org/document/11037426)
 
 - **Protecting Your Attention during Distributed Graph Learning: Efficient Privacy-Preserving Federated Graph Attention Network**  
-  **Jinhao Zhou**, Jun Wu, Jianbing Ni, Yuntao Wang, Yanghe Pan, Zhou Su  
+  **Jinhao Zhou**, Jun Wu, Jianbing Ni, Yuntao Wang, Yanghe Pan, Zhou Su*  
   *IEEE Transactions on Information Forensics and Security (TIFS)*, 2025. (CCF-A)  
   [论文链接](https://ieeexplore.ieee.org/document/10858070)
 
@@ -54,18 +54,18 @@ title: "周锦浩个人主页"
 ### 会议论文
 
 - **Real-Time Reliable Large Language Models with Distributed Knowledge Crowdsourcing for Automotive Mobile Intelligence**  
-  **Jinhao Zhou**, Jun Wu  
+  **Jinhao Zhou**, Jun Wu*  
   *IEEE International Conference on Wireless Artificial Intelligent Computing Systems and Applications (WASA)*, 2025  
   [论文链接](https://link.springer.com/chapter/10.1007/978-981-96-8725-1_33)
 
 - **Toward Privacy-Aware Efficient Federated Graph Attention Network in Smart Cloud**  
-  **Jinhao Zhou**, Zhou Su, Yuntao Wang, Qianqian Pan, Lizheng Liu, Jun Wu  
+  **Jinhao Zhou**, Zhou Su, Yuntao Wang, Qianqian Pan, Lizheng Liu, Jun Wu*  
   *IEEE SmartCloud*, 2024  
   🏆 **Best Paper Award（最佳论文奖）**  
   [论文链接](https://ieeexplore.ieee.org/document/10566319)
 
 - **Personalized Privacy-Preserving Federated Learning: Optimized Trade-off Between Utility and Privacy**  
-  **Jinhao Zhou**, Zhou Su, Jianbing Ni, Yuntao Wang, Yanghe Pan, Rui Xing  
+  **Jinhao Zhou**, Zhou Su*, Jianbing Ni, Yuntao Wang, Yanghe Pan, Rui Xing  
   *IEEE Global Communications Conference (GLOBECOM)*, 2022  
   [论文链接](https://ieeexplore.ieee.org/document/10000793)
 
