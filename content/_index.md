@@ -52,18 +52,18 @@ My research interests include:
 - **Real-Time Reliable Large Language Models with Distributed Knowledge Crowdsourcing for Automotive Mobile Intelligence**  
   **Jinhao Zhou**, Jun Wu  
   *IEEE International Conference on Wireless Artificial Intelligent Computing Systems and Applications (WASA)*, 2025  
-  [Paper](link)
+  [Paper](https://link.springer.com/chapter/10.1007/978-981-96-8725-1_33)
 
 - **Toward Privacy-Aware Efficient Federated Graph Attention Network in Smart Cloud**  
   **Jinhao Zhou**, Zhou Su, Yuntao Wang, Qianqian Pan, Lizheng Liu, Jun Wu  
   *IEEE SmartCloud*, 2024  
   🏆 **Best Paper Award**  
-  [Paper](link)
+  [Paper](https://ieeexplore.ieee.org/document/10566319)
 
 - **Personalized Privacy-Preserving Federated Learning: Optimized Trade-off Between Utility and Privacy**  
   **Jinhao Zhou**, Zhou Su, Jianbing Ni, Yuntao Wang, Yanghe Pan, Rui Xing  
   *IEEE Global Communications Conference (GLOBECOM)*, 2022  
-  [Paper](link)
+  [Paper](https://ieeexplore.ieee.org/document/10000793)
 
 - ***[Visual Instruction Tuning](https://arxiv.org/abs/2304.08485)*** <br>
   Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee
