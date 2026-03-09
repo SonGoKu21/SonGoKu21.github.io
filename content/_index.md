@@ -79,7 +79,7 @@ My research interests include:
   Advisor: Prof. Jun Wu
 
 - *2020 – 2023*  
-  **M.S. in Cyberspace Security**, Xi'an Jiaotong University, China  
+  **M.S. in School of Cyber Science and Engineering**, Xi'an Jiaotong University, China  
   Advisor: Prof. Zhou Su
 
 - *2016 – 2020*  
