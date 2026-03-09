@@ -1,18 +1,71 @@
 ---
-title: "Lorem ipsum"
+title: "Jinhao Zhou's Home Page"
 ---
 
 # About Me {#about-me}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+I am a Ph.D. candidate at the Graduate School of Information, Production and Systems (IPS), Waseda University, supervised by Prof. Jun Wu. My research focuses on trustworthy artificial intelligence, with particular emphasis on privacy-preserving machine learning, reliable large language models (LLMs), and secure retrieval-augmented generation (RAG).
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a>.
+My work investigates how to build trustworthy AI systems across multiple levels, including data privacy protection, secure model training, and reliability-aware inference mechanisms. I have developed several frameworks such as privacy-preserving graph attention learning, encrypted retrieval for large language models, and cognitive reliability diagnosis for hallucination detection.
+
+My research has been published or submitted to leading venues in artificial intelligence and security, including IEEE Transactions on Dependable and Secure Computing (TDSC), AAAI, WWW, and ICRA.
+
+I am currently interested in postdoctoral and faculty opportunities related to trustworthy AI, privacy-preserving machine learning, and reliable foundation models.
+
+My research interests include:
+
+- Trustworthy Artificial Intelligence  
+- Privacy-Preserving Machine Learning  
+- Large Language Models (LLMs)  
+- Retrieval-Augmented Generation (RAG)  
+- Secure and Reliable AI Systems  
 
 # 🔥 News {#news}
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2026*: 🎉 Our work on privacy-preserving and reliable AI models is being prepared for journal and conference submissions.
+- *2025*: 🎉 Research on secure retrieval-augmented generation and hallucination diagnosis completed.
+- *2024*: 🎉 Developed CipherRAG, a privacy-preserving RAG framework integrating encrypted retrieval with LLM inference.
+
 
 # 📝 Publications {#publications}
+
+# 📝 Publications {#publications}
+
+### Journal Articles
+
+- **Efficient Vector-Multiplicative Privacy-Preserving Retrieval-Augmented Generation for Large Language Models**  
+  **Jinhao Zhou**, Jun Wu  
+  *IEEE Transactions on Dependable and Secure Computing (TDSC)*, 2026. (CCF-A)  
+  [Paper](link) | [arXiv](link)
+
+- **DM-DPL: Toward Discrete Matrixing Differentially Private Learning**  
+  **Jinhao Zhou**, Zhou Su, Yuntao Wang, Jun Wu  
+  *IEEE Transactions on Information Forensics and Security (TIFS)*, 2025. (CCF-A)  
+  [Paper](link)
+
+- **Protecting Your Attention during Distributed Graph Learning: Efficient Privacy-Preserving Federated Graph Attention Network**  
+  **Jinhao Zhou**, Jun Wu, Jianbing Ni, Yuntao Wang, Yanghe Pan, Zhou Su  
+  *IEEE Transactions on Information Forensics and Security (TIFS)*, 2025. (CCF-A)  
+  [Paper](link)
+
+---
+
+### Conference Papers
+
+- **Real-Time Reliable Large Language Models with Distributed Knowledge Crowdsourcing for Automotive Mobile Intelligence**  
+  **Jinhao Zhou**, Jun Wu  
+  *IEEE International Conference on Wireless Artificial Intelligent Computing Systems and Applications (WASA)*, 2025  
+  [Paper](link)
+
+- **Toward Privacy-Aware Efficient Federated Graph Attention Network in Smart Cloud**  
+  **Jinhao Zhou**, Zhou Su, Yuntao Wang, Qianqian Pan, Lizheng Liu, Jun Wu  
+  *IEEE SmartCloud*, 2024  
+  🏆 **Best Paper Award**  
+  [Paper](link)
+
+- **Personalized Privacy-Preserving Federated Learning: Optimized Trade-off Between Utility and Privacy**  
+  **Jinhao Zhou**, Zhou Su, Jianbing Ni, Yuntao Wang, Yanghe Pan, Rui Xing  
+  *IEEE Global Communications Conference (GLOBECOM)*, 2022  
+  [Paper](link)
 
 - ***[Visual Instruction Tuning](https://arxiv.org/abs/2304.08485)*** <br>
   Haotian Liu, Chunyuan Li, Qingyang Wu, Yong Jae Lee
