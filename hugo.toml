@@ -45,14 +45,14 @@ disableKinds = ["taxonomy", "term", "RSS"]
       name = 'Educations'
       url = '#educations'
       weight = 5
-    [[languages.en.menu.main]]
-      name = 'Invited Talks'
-      url = '#invited-talks'
-      weight = 6
-    [[languages.en.menu.main]]
-      name = 'Internships'
-      url = '#internships'
-      weight = 7
+    #[[languages.en.menu.main]]
+    #  name = 'Invited Talks'
+    #  url = '#invited-talks'
+    #  weight = 6
+    #[[languages.en.menu.main]]
+    #  name = 'Internships'
+    #  url = '#internships'
+    #  weight = 7
       
   [languages.zh]
     languageName = '中文'
@@ -84,14 +84,14 @@ disableKinds = ["taxonomy", "term", "RSS"]
       name = '教育背景'
       url = '#educations'
       weight = 5
-    [[languages.zh.menu.main]]
-      name = '受邀报告'
-      url = '#invited-talks'
-      weight = 6
-    [[languages.zh.menu.main]]
-      name = '实习经历'
-      url = '#internships'
-      weight = 7
+   # [[languages.zh.menu.main]]
+   #   name = '受邀报告'
+   #   url = '#invited-talks'
+   #   weight = 6
+   # [[languages.zh.menu.main]]
+   #   name = '实习经历'
+   #   url = '#internships'
+   #   weight = 7
 
 [params]
   profilePicture = "images/profile.png"
