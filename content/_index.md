@@ -28,24 +28,22 @@ My research interests include:
 
 # 📝 Publications {#publications}
 
-# 📝 Publications {#publications}
-
 ### Journal Articles
 
 - **Efficient Vector-Multiplicative Privacy-Preserving Retrieval-Augmented Generation for Large Language Models**  
   **Jinhao Zhou**, Jun Wu  
   *IEEE Transactions on Dependable and Secure Computing (TDSC)*, 2026. (CCF-A)  
-  [Paper](link) | [arXiv](link)
+  [Paper](https://ieeexplore.ieee.org/document/11419667) 
 
 - **DM-DPL: Toward Discrete Matrixing Differentially Private Learning**  
   **Jinhao Zhou**, Zhou Su, Yuntao Wang, Jun Wu  
   *IEEE Transactions on Information Forensics and Security (TIFS)*, 2025. (CCF-A)  
-  [Paper](link)
+  [Paper](https://ieeexplore.ieee.org/document/11037426)
 
 - **Protecting Your Attention during Distributed Graph Learning: Efficient Privacy-Preserving Federated Graph Attention Network**  
   **Jinhao Zhou**, Jun Wu, Jianbing Ni, Yuntao Wang, Yanghe Pan, Zhou Su  
   *IEEE Transactions on Information Forensics and Security (TIFS)*, 2025. (CCF-A)  
-  [Paper](link)
+  [Paper](https://ieeexplore.ieee.org/document/10858070)
 
 ---
 
