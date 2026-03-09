@@ -71,16 +71,21 @@ My research interests include:
   <a href="https://arxiv.org/abs/2304.08485" class="no-trailing-icon"><img src="https://img.shields.io/badge/arXiv-2304.08485-b31b1b.svg?style=flat-square" alt="Arxiv-2304.08485"/></a><a href="https://github.com/haotian-liu/LLaVA" class="no-trailing-icon"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/haotian-liu/LLaVA?style=flat-square&logo=github&label=GitHub%20Stars&labelColor=black"></a>
 
 # 🎖 Honors and Awards {#honors-and-awards}
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-# 📖 Educations {#educations}
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024* 🏆 **Best Paper Award**, IEEE International Conference on Smart Cloud (SmartCloud)
+- *2019* **National Scholarship**, Ministry of Education of China
 
-# 💬 Invited Talks {#invited-talks}
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
-# 💻 Internships {#internships}
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+# 📖 Education {#educations}
+
+- *2023 – 2026 (expected)*  
+  **Ph.D. in Information Systems**, Waseda University, Japan  
+  Advisor: Prof. Jun Wu
+
+- *2020 – 2023*  
+  **M.S. in Cyberspace Security**, Xi'an Jiaotong University, China  
+  Advisor: Prof. Zhou Su
+
+- *2016 – 2020*  
+  **B.E. in Network Engineering**, China University of Geosciences (Wuhan), China
+
