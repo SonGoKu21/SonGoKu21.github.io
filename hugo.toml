@@ -21,9 +21,9 @@ disableKinds = ["taxonomy", "term", "RSS"]
     title = 'Zero'
 
     [languages.en.params]
-      author = "Lorem ipsum"
-      description = "Ph.D Student in [Lorem ipsum College](https://example.com). Focusing on Computer Vision and Deep Learning."
-      motto = "Most things in the world are not that important. But truth and love matter."
+      author = "Jinhao Zhou"
+      description = "Ph.D Student in Waseda University. Focusing on Trustworthy and privacy-preserving AI."
+      motto = "All is well."
     
     [[languages.en.menu.main]]
       name = 'About Me'
@@ -60,8 +60,8 @@ disableKinds = ["taxonomy", "term", "RSS"]
     title = '学术主页'
     
     [languages.zh.params]
-      author = "王小明"
-      description = "某某大学博士生，专注于计算机视觉与深度学习"
+      author = "周锦浩"
+      description = "早稻田大学博士生，专注于隐私保护人工智能和可信人工智能"
       motto = "世界上大部分事，都没有太大意义。真理与爱除外。"
     
     [[languages.zh.menu.main]]
@@ -98,25 +98,17 @@ disableKinds = ["taxonomy", "term", "RSS"]
   enableDarkMode = true
   
   [[params.social]]
-    name = "github"
-    url = "https://github.com/"
-    icon = "fab fa-github"
+    name = "orcid"
+    url = "https://orcid.org/my-orcid?orcid=0009-0004-0162-5835"
+    icon = "fab fa-orcid"
   [[params.social]]
     name = "google-scholar"
-    url = "https://scholar.google.com/"
+    url = "https://scholar.google.com.hk/citations?user=C-F2LFUAAAAJ"
     icon = "fab fa-google-scholar"
   [[params.social]]
     name = "email"
-    url = "mailto:example@example.com"
+    url = "jinhao@suou.waseda.jp"
     icon = "fas fa-envelope"
-  [[params.social]]
-    name = "linkedin"
-    url = "https://linkedin.com/"
-    icon = "fab fa-linkedin"
-  [[params.social]]
-    name = "zhihu"
-    url = "https://zhihu.com/"
-    icon = "fab fa-zhihu"
 
 [build]
   writeStats = false
