@@ -8,7 +8,7 @@ I am a Ph.D. candidate at the Graduate School of Information, Production and Sys
 
 My work investigates how to build trustworthy AI systems across multiple levels, including data privacy protection, secure model training, and reliability-aware inference mechanisms. I have developed several frameworks such as privacy-preserving graph attention learning, encrypted retrieval for large language models, and cognitive reliability diagnosis for hallucination detection.
 
-My research has been published or submitted to leading venues in artificial intelligence and security, including IEEE Transactions on Dependable and Secure Computing (TDSC), AAAI, WWW, and ICRA.
+My research has been published or submitted to leading venues in artificial intelligence and security, including IEEE TDSC and IEEE TIFS.
 
 I am currently interested in postdoctoral and faculty opportunities related to trustworthy AI, privacy-preserving machine learning, and reliable foundation models.
 
